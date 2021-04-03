@@ -1,8 +1,6 @@
 FROM centos:latest
 MAINTAINER abhishekm667ca@gmail.com
-RUN yum install -y httpd \
-  zip \
- unzip 
+RUN yum install -y httpd 
 RUN yum install git -y
 WORKDIR /var/www/html
 RUN cd /var/www/html
