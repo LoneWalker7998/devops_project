@@ -6,7 +6,7 @@ RUN yum install -y httpd \
 RUN yum install git -y
 WORKDIR /var/www/html
 RUN cd /var/www/html
-RUN git clone https://github.com/iamdhavalparmar/newrepo.git
+RUN git clone https://github.com/deepakkhokhar1313/nodejs.git
 RUN cp -rvf newrepo/* .
 RUN rm -rf newrepo 
 CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
